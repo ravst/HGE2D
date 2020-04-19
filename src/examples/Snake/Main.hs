@@ -48,7 +48,7 @@ stateUpdate = EngineState
       myKeyDown _ _ 'k' gs = setDirection gs DDown
       myKeyDown _ _ 'l' gs = setDirection gs DRight
       myKeyDown _ _ 'j' gs = setDirection gs DLeft
-      myKeyDown _ _ 'r' _ = initialGameState
+      myKeyDown _ _ 'r' gs = initialGameState {gsSize = (gsSize gs)}
       myKeyDown _ _ ' ' gs = case (pause gs) of
                                Pause -> gs {pause = NoPause}
                                NoPause -> gs {pause = Pause}
