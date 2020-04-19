@@ -1,3 +1,19 @@
+# Snake in HGE 2D
+
+In src/examples/Snake/ you can find an implementation of Game Snake.
+You can run it with:
+`cabal run snake`
+The controls are:
+
+ * Space : pause/unpause
+ * i,j,k,l : controls
+ * r : reset
+
+You should resize the game window after starting the game and after resetting
+(this will readjust the board).
+
+Below you can find the readme of the original library:
+
 # HGE2D
 A 2D game engine written in and for Haskell
 ## Version 0.1.10.2
